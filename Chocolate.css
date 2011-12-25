@@ -1,0 +1,205 @@
+/* The W3C Core Styles Copyright (c) 1998 W3C (MIT, INRIA, Keio), All Rights
+Reserved. W3C liability, trademark, document use and software licensing rules
+apply. See http://www.w3.org/Consortium/Legal/ipr-notice.html
+
+This stylesheet has been served in a form to avoid known bugs in your user
+agent's CSS implementation. Copying and serving this stylesheet to other
+agents may lead to unexpected results. Please refer to its address rather than
+copy it. */
+
+
+
+
+
+/* MacNS4.0 */
+
+
+
+
+/* MacNS4.0 */
+h1, h2, h3, h4, h5, h6, th, dt	{ font-family:	'Trebuchet MS', Verdana, 'Myriad Web', Syntax, sans-serif; }
+
+
+
+
+/* MacNS4.0 */
+P, DIV, UL, DL, DT, DD, PRE, OL, LI, BLOCKQUOTE, ADDRESS	{
+	color: #D0FFD0;
+	}
+	/* begin affordances */	/* 3 - mint reverse */
+		
+A, ADDRESS, BLOCKQUOTE, BODY, CITE, CODE, DD, DEL, DFN,		
+DIV, DL, DT, EM, FORM, H1, H2, H3, H4, H5, H6, IFRAME, IMG, KBD,		
+LI, OBJECT, OL, P, Q, SAMP, SMALL, SPAN, STRONG, SUB, SUP, UL, VAR, 		
+APPLET, BIG, CENTER, DIR, FONT, HR, MENU, PRE,		
+ABBR, ACRONYM, BDO, BUTTON, FIELDSET, INS, LABEL	{	
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	text-decoration:	none;
+	border-color:	#CCC;
+	border-style:	none;
+	}	
+		
+BODY	{	
+	color:	#D0FFD0;
+	background:	#212121;
+	}	
+		
+EM	{	
+	font-style:	normal;
+	font-weight:	bold;
+	color:	#D0FFD0;
+	background:	#212121;
+	}	
+		
+STRONG	{	
+	font-style:	italic;
+	background:	#212121;
+	font-weight:	bold;
+	color:	#D0FFD0;
+	}	
+		
+EM STRONG, STRONG EM	{	
+	text-transform:	uppercase;
+	font-style:	normal;
+	font-weight:	bolder;
+	background:	#212121;
+	color:	#D0FFD0;
+	}	
+		
+B	{
+	font-weight:	bold;
+	}
+	
+I	{
+	font-style:	italic;
+	}
+		
+.warning	{	
+	text-transform:	none;
+	font-style:	normal;
+	font-weight:	bolder;
+	background:	yellow;
+	color:	black;
+	}	
+		
+DEL	{	
+	text-decoration:	line-through;
+	background:	#900;
+	}	
+		
+INS	{	
+	text-decoration:	none;
+	background:	#060;
+	}	
+		
+VAR, CITE, DFN, .note	{	
+	font-style:	italic;
+	}	
+		
+ADDRESS	{	
+	font-style:	normal;
+	letter-spacing:	.1em;
+	}	
+		
+ACRONYM	{	
+	font-variant:	small-caps;
+	letter-spacing:	0.1em;
+	}	
+		
+H1, H2, H3, H4, H5, H6, DT, TH, THEAD, TFOOT	{	
+	color:	rgb(245,245,245);
+	background:	#212121;
+	}	
+		
+HR	{	
+	color:	#CCC;
+	}	
+		
+#colophon	{	
+	display:	none;
+	}	
+		
+COL, COLGROUP, TABLE, TBODY, TD, TR	{	
+	color:	#D0FFD0;
+	text-decoration:	none;
+	border-color:	#CCC;
+	border-style:	none;
+	background:	#212121;
+	}	
+		
+A:link	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	#F60;
+	background:	#212121;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	#C96;
+	background:	#212121;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	#FFC;
+	background:	#212121;
+	}	
+		
+A:hover	{	
+	text-decoration:	none;
+	color:	#FC0;
+	background:	#212121;
+	}	
+		
+A.offsite	{	
+	text-decoration:	none;
+	font-weight:	normal;
+	color:	#F60;
+	background:	#212121;
+	}	
+		
+	/* end affordances */	
+
+
+
+
+
+/* MacNS4.0 */
+
+
+
+
+/* MacNS4.0 */
+
+
+
+
+/* MacNS4.0 */
+	/* begin body box */	/* 5 - 'ninths symmetric' */
+
+BODY	{
+	margin-top:	1.58em;
+	margin-left:	11%;
+	margin-right:	8%;
+	margin-bottom:	1.58em;
+	padding-top:	0;
+	padding-left:	0;
+	padding-right:	0;
+	padding-bottom:	0;
+	border-top:	0;
+	border-left:	0;
+	border-bottom:	0;
+	border-right:	0;
+	width:	auto;
+	}
+	/* end body box */
+
+
+
+
+
