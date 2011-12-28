@@ -1,9 +1,0 @@
-\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Summary}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Objective}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Work experience}}{1}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Education}}{2}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{Selected Awards and Honors}}{2}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-6}{Books, Patents And Software}}{3}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-7}{Selected Publications And Articles}}{4}\relax 
-\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-8}{Other Interests}}{5}\relax 

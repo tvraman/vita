@@ -3,9 +3,9 @@
 .cmmi-10{font-style: italic;}
 .ptmr7t-{font-family: monospace;}
 .pcrr7t-{font-family: monospace;}
-.ptmri7t-{font-style: italic;}
 .ptmro7t-{font-style: oblique;}
 .ptmb7t-{ font-weight: bold;}
+.ptmri7t-{font-style: italic;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
@@ -29,8 +29,7 @@ div.obeylines-v p { margin-top:0; margin-bottom:0; }
 td.displaylines {text-align:center; white-space:nowrap;}
 .centerline {text-align:center;}
 .rightline {text-align:right;}
-div.verbatim {font-family: monospace; white-space: nowrap; }
-table.verbatim {width:100%;}
+div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
 .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.fbox {display:table}
 div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
@@ -108,6 +107,6 @@ div.author{white-space: nowrap;}
 .abstract p {margin-left:5%; margin-right:5%;}
 table.abstract {width:100%;}
 .plainbib {vertical-align: top;} 
-td#TBL-2-1-1{border-left:solid black 0.4pt;border-right:solid black 0.4pt;}
+td#TBL-2-1-4{border-left:solid black 0.4pt;border-right:solid black 0.4pt;}
 /* end css.sty */
 
