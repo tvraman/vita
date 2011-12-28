@@ -1,4 +1,4 @@
-WEB=/home/tvraman/public_html/sf-www-emacspeak/raman/
+WEB=/home/raman/public_html/sf-www-emacspeak/raman/
 all: resume.pdf resume.html
 resume.pdf: resume.tex resume-style.tex tvr-macros.tex
 	pdflatex resume
