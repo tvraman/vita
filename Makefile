@@ -1,18 +1,14 @@
-WEB=/home/tvraman/public_html/personal-web/
+WEB=/home/tvraman/public_html/sf-www-emacspeak/raman/
 all: resume.pdf resume.html
-resume.pdf: resume.tex
-	latex $<
-	latex $<
-	dvips -Pwww resume.dvi
-	ps2pdf resume.ps
-
+resume.pdf: resume.tex resume-style.tex tvr-macros.tex
+	pdflatex resume
 
 resume.html: resume.tex 
 	htlatex resume resume
 
 
-dist: resume.pdf resume.html
-	tar cfz res.tgz resume.html resume.pdf
+dist: resume.pdf resume.html resume.css
+	tar cfz res.tgz resume.html resume.pdf resume.css
 
 
 clean:
