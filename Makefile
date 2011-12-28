@@ -16,7 +16,9 @@ dist: resume.pdf resume.html
 
 
 clean:
-	rm -f resume.ps resume.pdf resume.dvi resume.html resume.4* resume.lg
+	rm -f resume.ps resume.pdf resume.dvi resume.html \
+	resume.css resume.tmp resume.xref resume.4* resume.lg \
+	resume.aux resume.idv resume.log resume.out
 pub: resume.pdf resume.html resume.css
 	cp resume.css resume.pdf resume.html ${WEB}
 	(cd ${WEB} ;make publish)
