@@ -1,14 +1,3 @@
-% <(mybibliography given by nelson beebee)>
-\makeatletter
-\def\plainbibliography#1{\@mkboth{REFERENCES}{REFERENCES}\list
-  {\arabic{enumi}}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
-    \advance\leftmargin\labelsep
-    \usecounter{enumi}}
-    \def\newblock{\hskip .11em plus .33em minus .07em}
-    \sloppy\clubpenalty4000\widowpenalty4000
-    \sfcode`\.=1000\relax}
-\makeatother
-%<end mybibliography>
 \usepackage{helvet}
 \usepackage{paralist}
 \RequirePackage[colorlinks]{hyperref}
@@ -27,13 +16,11 @@
 \topmargin 0pt
 \advance \topmargin by -\headheight
 \advance \topmargin by -\headsep
-\textheight 8.95in
+\textheight 8.9in
+\textwidth 6.75in
 \oddsidemargin 0pt
 \evensidemargin \oddsidemargin
-\marginparwidth 0.5in
-
-\textwidth 6.75in
-
+%\marginparwidth 0.5in
 %%% }}}
 \newcommand{\iitb}{Indian~Institute~of~Technology,~Bombay}
 \tolerance 100
