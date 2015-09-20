@@ -3,45 +3,9 @@
 \ifx \ramanloaded\relax \endinput\else\let\ramanloaded\relax\fi
 \newcommand{\newrow}{\\ \hline}
 \newcommand{\mdash}{---}
-\newcommand{\www}[1]{{\sl WWW}: {\small #1}}
 \newcommand{\email}[1]{{\sl E-mail\/}: $\langle\hbox{\tt#1}\rangle$}
 \newcommand{\phone}[1]{{\sl Phone\/}: {\tt #1}}
-
-%Cross references to make them consistent
-
-%smart varioref turned off.
-%\setcounter{vrcnt}{7000}%stop variation
-%figure reference. 
-\newcommand{\figref}[1]{Figure~\vref{#1}}
-%table reference: 
-\newcommand{\tabref}[1]{Table~\vref{#1}}
-% equation ref 
-\newcommand{\eqnref}[1]{equation~\vref{#1}}
-%section reference. 
-\newcommand{\sref}[1]{Sec.~\ref{#1}}
-\newcommand\cref[1]{Chap.~\ref{#1}}
-\newcommand{\aref}[1]{App.~\ref{#1}}
-
-%framed minipage
-\newenvironment{fMinipage}%
-    {\begin{Sbox}\begin{minipage}}%
-    {\end{minipage}\end{Sbox}\fbox{\TheSbox}}
-    %get slightly longer or shorter pages to avoid bad breaks
+    
+% get slightly longer or shorter pages to avoid bad breaks
 \newcommand{\longpage}{\enlargethispage{\baselineskip}}
 \newcommand{\shortpage}{\enlargethispage{-\baselineskip}}
-%Adobe Logo
-\newlength\AdobeLength 
-\newcommand{\AdobeLogoAsEPSF}{/user/raman/text/ADOBE/Adobe.eps}
-\newcommand{\AdobeLogo}{%
-  \settowidth\AdobeLength{\Huge A}
-  \ifundefined{epsfxsize}\input{epsf}\fi
-      \epsfxsize=\AdobeLength\epsfbox{\AdobeLogoAsEPSF}}
-    %end Adobe logo
-\newcommand{\slidetitle}[1]{\center \framebox{\large\bf #1}}
-
-\def\readRCS$#1: #2 #3 #4 #5${%
- \def\RCSFile{#2}%
- \def\RCSVersion{#3}%
- \def\RCSDate{#4}%
-\def\RCSLock{#5}%
-}
