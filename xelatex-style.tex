@@ -1,0 +1,57 @@
+%\usepackage{helvet}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+%\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fonti%n Italic}]{Fontin}
+%\setsansfont [Ligatures={Common}, BoldFont={Fonti%n Sans Bold}, ItalicFont={Fonti%n Sans Italic}]{Fontin Sans}
+%\setmonofont[Scale=0.8]{Monaco} 
+
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+\usepackage{paralist}
+\RequirePackage[colorlinks]{hyperref}
+\hypersetup{linkcolor=blue,urlcolor=blue}
+
+%tighten lists
+\itemsep 0pt plus 0pt  minus 7pt
+\parskip 0pt plus 0pt  minus 5pt
+\parsep 0pt plus 1pt  minus 5pt
+\partopsep 0pt plus 1pt  minus 5pt
+% Page Dimensions
+
+% Document Style Option to fill the paper just like Plain TeX.
+
+\topmargin 0pt
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
+\textheight 8.95in
+\oddsidemargin 0pt
+\evensidemargin \oddsidemargin
+\marginparwidth 0in
+
+\textwidth 6.75in
+
+\newcommand{\iitb}{Indian~Institute~of~Technology,~Bombay}
+\tolerance 100
+
+\newcommand{\newrow}{\\ \hline}
+\newcommand{\mdash}{---}
+\newcommand{\email}[1]{{\sl E-mail\/}: $\langle\hbox{\tt#1}\rangle$}
+\newcommand{\phone}[1]{{\sl Phone\/}: {\tt #1}}
+\newcommand\livelink[1]{\href{#1}{#1}}
+% get slightly longer or shorter pages to avoid bad breaks
+\newcommand{\longpage}{\enlargethispage{\baselineskip}}
+\newcommand{\shortpage}{\enlargethispage{-\baselineskip}}
+
