@@ -3,7 +3,7 @@ all: resume.pdf resume.html
 resume.pdf: resume.tex resume-style.tex 
 	pdflatex resume
 
-resume.html: resume.tex 
+resume.html: resume.tex  resume-style.tex
 	htlatex resume resume
 
 
