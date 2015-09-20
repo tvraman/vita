@@ -1,76 +1,9 @@
 %$Id: tvr-macros.tex,v 1.2 2001/10/28 03:18:20 raman Exp $
 %safe loading: exit if already loaded:
 \ifx \ramanloaded\relax \endinput\else\let\ramanloaded\relax\fi
-%taken from cornell thesis style
-% Dedication
-%
-\def\dedication{\cleardoublepage
-\typeout{Dedication}
-\null\vfil
-\begin{center}
-}
-\def\enddedication{%
-\end{center}
-\vfil\null
-\cleardoublepage
-}
-%
-%\bs prints a literal backslash
-\newcommand{\bs}{{\tt\char`\\}}
-%displaytext:  Like LaTeX quote environment, except that the text is
-%not indented from the right.
-\def\displaytext{\list{}{\rightmargin=0pt}\item[]}
-\let\enddisplaytext=\endlist
-\newlength\fMinipagesize
-\setlength{\fMinipagesize}{.8\textwidth}
-%aster logo
-\newcommand{\asterpicture}{%
-  \leavevmode\epsfxsize=\fMinipagesize\epsfbox{aster.eps}}
-\def \ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax }
-\newcommand{\boldaster}{%
-  \bf A\kern -.1667em\lower .5ex\hbox {S}%
-\kern -.175em{T}\kern -.1667em\lower .5ex\hbox {E}\kern -.175em R}
-\newcommand{\aster}
-{A\kern -.1667em\lower .5ex\hbox {S}%
-\kern -.175em{T}\kern -.1667em\lower .5ex\hbox {E}\kern -.175em R}
-\newlength\asterlength
-\newcommand{\asterphoto}{
-  \ifundefined{epsfxsize}\input{epsf}\fi
-      \epsfxsize=\asterlength\epsfbox{/home/raman/text/aster/aster.ps}}
-
-\newcommand{\asterlogo}{%Uses \asterlength
-    \settowidth\asterlength{\boldaster}
-    \setbox0=\hbox{\asterphoto}
-    \mbox{\asterphoto\hspace{-\asterlength}\raise\dp0\hbox{\boldaster}}
-  }
-%end aster logo
-%Use to generate a new row in tables with a horizontal line separating
-%them:
 \newcommand{\newrow}{\\ \hline}
-\newcommand{\headrow}{\\ \hline \hline} 
 \newcommand{\mdash}{---}
-\newcommand{\afl}{{AFL}}
 
-%% input tugboat macros.
-%%macro definitions from tug92 paper.
-
-\newcommand{\ie}{{\em i.e.,}}
-
-\newcommand{\eg}{{\em e.g.,}}
-
-\newcommand{\naive}{na{\"\i}ve{}}
-\newcommand{\naively}{na{\"\i}vely{}}
-\newcommand{\cliche}{clich\'e{}}
-\newcount\TestCount
-\newcommand{\La}{\TestCount=\the\fam \leavevmode L\raise.42ex
-        \hbox{$\fam\TestCount\scriptstyle\kern-.3em A$}}
-\newcommand\AllTeX{(\La)\TeX}
-\newcommand{\alltex}{\AllTeX{}}
-
-\newcommand{\latex}{\LaTeX{}}
-
-\newcommand{\tex}{\TeX{}}
-%
 \newcommand{\www}[1]{{\sl WWW}: {\small #1}}
 \newcommand{\email}[1]{{\sl E-mail\/}: $\langle\hbox{\tt#1}\rangle$}
 \newcommand{\phone}[1]{{\sl Phone\/}: {\tt #1}}
