@@ -1,6 +1,6 @@
 WEB=/home/raman/public_html/sf-www-emacspeak/raman/
 all: resume.pdf resume.html
-resume.pdf: resume.tex resume-style.tex tvr-macros.tex
+resume.pdf: resume.tex resume-style.tex 
 	pdflatex resume
 
 resume.html: resume.tex 
